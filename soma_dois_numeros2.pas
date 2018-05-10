@@ -5,7 +5,7 @@ N1, N2, Soma : real;
 
 Begin
 writeln('Programa que soma dois números');
-write(Entre com o primeiro número: ');
+write('Entre com o primeiro número: ');
 readln(N1);
 write('Entre com o segundo número: ');
 readln(N2);
