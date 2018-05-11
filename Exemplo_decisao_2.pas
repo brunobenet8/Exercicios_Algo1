@@ -4,18 +4,17 @@ Var
 N1, N2, Media : real;
 
 Begin
-write(‘Entre com a primeira nota: ‘);
+write('Entre com a primeira nota: ');
 read (N1);
 	
-write(‘Entre com a segunda
+write('Entre com a segunda nota: ');
 read (N2);
-nota: ‘);
 Media := (N1 + N2) / 2;
 writeln;
 if (Media >= 7)then
-	 write(‘-> Aprovado’)
+	 write('-> Aprovado');
 else
-write(‘-> Reprovado’);
+write('-> Reprovado');
 readkey;
 	
 End.
