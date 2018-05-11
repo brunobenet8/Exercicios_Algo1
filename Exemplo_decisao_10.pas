@@ -4,15 +4,15 @@ Var
 letra : char;
 
 Begin
-write (‘Tecle uma letra entre a e z: ‘);
+write ('Tecle uma letra entre a e z: ');
 letra := readkey;
 
-if ((letra >= ‘A’ ) and (letra <= ‘Z’)) then
-writeln(‘ você teclou - ‘,letra,’ - MAIÚSCULA’)
-else if ((letra >= ‘a’ ) and (letra <= ‘z’)) then
-writeln(‘ você teclou - ‘,letra,’ - minúscula’)
+if ((letra >= 'A' ) and (letra <= 'Z')) then
+writeln(' você teclou - ',letra,' - MAIÚSCULA')
+else if ((letra >= 'a' ) and (letra <= 'z')) then
+writeln(' você teclou - ',letra,' - minúscula')
 else
-writeln(‘ Caractere inválido, não é uma letra....’);
+writeln(' Caractere inválido, não é uma letra....');
 
 readkey;
 End.
