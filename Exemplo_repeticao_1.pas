@@ -4,6 +4,6 @@ i : integer;
 Begin
 	
 for i := 1 to 1000 do
-write(‘ ‘, i);
+write(' ', i);
 readkey;
 End.
