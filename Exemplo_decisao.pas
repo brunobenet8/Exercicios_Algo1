@@ -2,9 +2,9 @@ Program Exemplo_decisao_1;
 
 Begin
 if (2 > 1)then
-writeln(‘VERDADEIRO’)
+writeln('VERDADEIRO')
 else
-writeln(‘FALSO’);
+writeln('FALSO');
 readkey;
 	
 End.
