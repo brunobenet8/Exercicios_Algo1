@@ -4,11 +4,11 @@ Var
 letra : char;
 
 Begin
-write (‘Tecle uma letra entre A e Z: ‘);
+write ('Tecle uma letra entre A e Z: ');
 letra := readkey;
-if ((letra >= ‘A’ ) and (letra <= ‘Z’)) then
-writeln(‘ você ACERTOU - letra MAIÚSCULA’)
+if ((letra >= 'A' ) and (letra <= 'Z')) then
+writeln(' você ACERTOU - letra MAIÚSCULA')
 else
-writeln(‘ você ERROU’);
+writeln(' você ERROU');
 readkey;
 End.
