@@ -16,6 +16,6 @@ Begin
 b:=a;
 c:=4;
 end;
-write(‘Valores de a,b,c são: ‘,a,b,c);	
+write('Valores de a,b,c são: ',a,b,c);	
 readkey;
 End.
