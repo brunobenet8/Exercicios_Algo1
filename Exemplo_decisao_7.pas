@@ -4,12 +4,12 @@ Var
 letra : char;
 
 Begin
-write (‘ Tecle a consoante da palavra “aula” -> ‘);
+write (' Tecle a consoante da palavra “aula” -> ');
 letra := readkey;
-if (letra = ‘l’) then
-write (‘ você ACERTOU - letra L)
+if (letra = 'l') then
+write (' você ACERTOU - letra L')
 else
-write (‘ você ERROU ‘);
+write (' você ERROU ');
 readkey;
 	
 End.
