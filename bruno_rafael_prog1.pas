@@ -1,4 +1,4 @@
-program bruno_rafael_prog3;
+program bruno_rafael_prog1;
 
 var
 entrada : char;
