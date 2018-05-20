@@ -1,4 +1,4 @@
-program HelloWorld;
+program bruno_rafael_prog3;
 
 var
 entrada : char;
