@@ -1,0 +1,14 @@
+program bruno_rafael_prog2;
+
+var
+alg1, alg2, alg3, nalg : integer;
+begin
+    alg1 := 1;
+    alg2 := 1;
+    alg3 := 3;
+    nalg := (alg1 + (alg2 * 3) + (alg3 * 5))mod(7);
+    write(alg1);
+    write(alg2);
+    write(alg3);
+    write(nalg);
+end.
