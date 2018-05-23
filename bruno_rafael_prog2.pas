@@ -1,15 +1,9 @@
 program bruno_rafael_prog2;
-uses SysUtils;
 
 var
-alg,  nalg : integer;
-b, alg1, alg2, alg3: string;
+num,  nnum : integer;
 begin
-alg := 100;
-b := IntToStr(alg);
-alg1 := copy(b, 0,1);
-alg2 := copy(b, 2,2);
-alg3:= copy(b, 3,3);
-nalg:= (StrToInt(alg1) + (StrToInt(alg2) * 3) + (StrToInt(alg3) * 5))mod(7);
-writeln(nalg);
+num:= 111;
+nnum := (num * 10) + (trunc(num / 100) + (trunc((trunc(num / 10))mod(10)) * 3) + (trunc((num)mod(10)) * 5))mod(7);
+writeln(nnum);
 end.
