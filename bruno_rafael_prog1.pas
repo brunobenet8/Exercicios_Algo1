@@ -3,6 +3,8 @@ program bruno_rafael_prog1;
 var
 entrada : char;
 begin
+writeln('Tecle uma vez:');
+readkey(entrada);
     entrada := 'f';
     if((entrada >= 'A') and (entrada <= 'Z'))then
         if((entrada = 'A') or (entrada = 'E') or (entrada = 'I') or (entrada = 'O') or (entrada = 'U'))then
