@@ -4,7 +4,7 @@ var
 entrada : char;
 begin
 writeln('Tecle uma vez:');
-readkey(entrada);
+entrada := readkey;
     if((entrada >= 'A') and (entrada <= 'Z'))then
         if((entrada = 'A') or (entrada = 'E') or (entrada = 'I') or (entrada = 'O') or (entrada = 'U'))then
             writeln('Vogal Maiuscula!')
