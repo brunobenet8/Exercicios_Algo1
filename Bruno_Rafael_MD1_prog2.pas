@@ -1,29 +1,29 @@
-program Bruno_Rafael_MD1_prog2;
-
 var
-numero : array[1..3,1..3] of integer;
+numero : array[1..5,1..5] of integer;
 i,j,par,impar: integer;
 
 begin
     par:= 0;
     impar:= 0;
-    for i := 1 to 3 do
-        for j:= 1 to 3 do
+    for i := 1 to 5 do
+        for j:= 1 to 5 do
             begin
-                numero[i,j]:= i;
+            writeln('Digite um numero!');
+                read(numero[i,j]);
                 if((i)mod(2) = 0)then
-                    par := par + i
+                    par := par + 1
                 else
-                    impar := impar + i;
+                    impar := impar + 1;
             end;
             
-    for i:= 1 to 3 do
+    for i:= 1 to 5 do
         begin
-            for j:= 1 to 3 do
+            for j:= 1 to 5 do
                 write(numero[i,j]);
                 writeln();
         end;
         
-    writeln('A soma dos pares e: ',par);
-    writeln('A soma dos impares e ',impar);
+    writeln('A quantidade de numeros pares e: ',par);
+    writeln('A quantidade de numeros impares e ',impar);
+    readkey;
 end.
