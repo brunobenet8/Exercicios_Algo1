@@ -1,11 +1,13 @@
 program comparacao;
+
 const
 MAX = 500;
+
 var
 numeros : array[1.. MAX] of integer;
 h : integer;
 
-function particiona(inicio,fim :integer):integer;
+function particiona(inicio,fim : integer):integer;
 var
 esquerda, direita : integer;
 pivot : integer;
@@ -35,7 +37,7 @@ begin
     particiona := direita;
 end;
 
-procedure QuickSort(inicio, fim:integer);
+procedure QuickSort(inicio, fim : integer);
  var
   meio : integer;
 begin
@@ -50,9 +52,11 @@ end;
 procedure BubbleSort();
 var
  aux,j,i : integer;
+ 
  begin
   J := MAX;
-  while(j>1)do
+  
+  while(j > 1)do
    begin
     for i:= 1 to j-1 do
      begin
@@ -63,6 +67,7 @@ var
         numeros[i+1] := aux;
        end;
      end;
+     j := j - 1;
    end;
  end;
  
@@ -75,7 +80,7 @@ var
  end;
 
 Begin
-		 randomize;
+     randomize;
 		 
      ////aqui ele cria 500 numeros aleatorios e faz o bubble sort
      for h := 1 to 500 do
@@ -84,6 +89,5 @@ Begin
      	writeln('BubbleSort executando...');
      	BubbleSort();
      	writeln('BubbleSort executado!');
-     	////tempo de execucao (windowsXP 32bits emulado num virtualBox com 1GB de RAM)
-     	/////resultado em tempo:
+     	////tempo de execucao :
 End.
