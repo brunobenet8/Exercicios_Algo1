@@ -7,7 +7,7 @@ var
 numeros : array[1.. MAX] of integer;
 h : integer;
 
-function particiona(inicio,fim : integer):integer;
+function particiona(inicio,fim :integer):integer;
 var
 esquerda, direita : integer;
 pivot : integer;
@@ -37,7 +37,7 @@ begin
     particiona := direita;
 end;
 
-procedure QuickSort(inicio, fim : integer);
+procedure QuickSort(inicio, fim:integer);
  var
   meio : integer;
 begin
@@ -52,11 +52,9 @@ end;
 procedure BubbleSort();
 var
  aux,j,i : integer;
- 
  begin
   J := MAX;
-  
-  while(j > 1)do
+  while(j>1)do
    begin
     for i:= 1 to j-1 do
      begin
@@ -67,10 +65,10 @@ var
         numeros[i+1] := aux;
        end;
      end;
-     j := j - 1;
+     j:= j-1;
    end;
  end;
- 
+
  procedure exibe();
  var
  i : integer;
@@ -80,14 +78,25 @@ var
  end;
 
 Begin
-     randomize;
-		 
-     ////aqui ele cria 500 numeros aleatorios e faz o bubble sort
-     for h := 1 to 500 do
-     	numeros[h] := random(500);
+      randomize;
+
+      ///aqui ele cria  numeros aleatorios e faz o quicksort
+      for h := 1 to MAX do
+        numeros[h] := random(MAX);
+
+        writeln('QuickSort executando...');
+        QuickSort(numeros[1], numeros[MAX]);
+        writeln('QuickSort finalizado!');
+      ///tempo de execucao:
+
+
+     ////aqui ele cria numeros aleatorios e faz o bubble sort
+     for h := 1 to MAX do
+     	numeros[h] := random(MAX);
      	
      	writeln('BubbleSort executando...');
      	BubbleSort();
      	writeln('BubbleSort executado!');
-     	////tempo de execucao :
+     	////tempo de execucao: 
+
 End.
