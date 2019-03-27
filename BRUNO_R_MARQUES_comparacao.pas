@@ -79,24 +79,18 @@ var
 
 Begin
       randomize;
-
-      ///aqui ele cria  numeros aleatorios e faz o quicksort
       for h := 1 to MAX do
         numeros[h] := random(MAX);
-
+        
         writeln('QuickSort executando...');
         QuickSort(numeros[1], numeros[MAX]);
+        exibe();
         writeln('QuickSort finalizado!');
-      ///tempo de execucao:
-
-
-     ////aqui ele cria numeros aleatorios e faz o bubble sort
-     for h := 1 to MAX do
-     	numeros[h] := random(MAX);
-     	
+     
      	writeln('BubbleSort executando...');
      	BubbleSort();
+        exibe();
      	writeln('BubbleSort executado!');
-     	////tempo de execucao: 
+     	
 
 End.
