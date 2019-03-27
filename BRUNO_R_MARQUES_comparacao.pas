@@ -83,7 +83,7 @@ Begin
         numeros[h] := random(MAX);
         
         writeln('QuickSort executando...');
-        QuickSort(numeros[1], numeros[MAX]);
+        QuickSort(1,500);
         exibe();
         writeln('QuickSort finalizado!');
      
