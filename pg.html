@@ -1,0 +1,39 @@
+<html>
+<body>
+    <input type="number" placeholder = "Quantidade" id="qtde">
+    <select name="Tipo" id="tipo">
+        <option value="a">Tipo 1</option>
+        <option value="b">Tipo 2</option>
+        <option value="c">Tipo 3</option>
+    </select>
+    <button onclick="verifica()">Verificar</button>
+</body>
+<script>    
+    function verifica(){
+        var qtde = document.getElementById("qtde").value;
+        var tipo = document.getElementById("tipo").value;
+        var p1 = 0;
+        var p2 = 0;
+        var p3 = 0;
+        if(tipo == "a"){
+            p1 = qtde * 10;
+            p2 = qtde * 0.5;
+            p3 = qtde * 0.1;
+        }if(tipo == "b"){
+            p1 = qtde * 8;
+            p2 = qtde * 0.9;
+            p3 = qtde * 0.25;
+        }if(tipo == "c"){
+            p1 = qtde * 12;
+            p2 = qtde * 0.3;
+            p3 = qtde * 0.1;
+    }
+    document.writeln('<a href="C://qt/pg.html">Voltar</a>');
+    document.writeln('</br>');
+    document.writeln('</br>');
+    document.writeln('Produto 1: ', Number((p1).toFixed(2)), '</br>');
+    document.writeln('Produto 2: ', Number((p2).toFixed(2)), '</br>');
+    document.writeln('Produto 3: ', Number((p3).toFixed(2)), '</br>');
+    }
+</script>
+</html>
